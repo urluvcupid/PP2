@@ -1,2 +1,2 @@
-if 5 == 10 or 4 == 4:
+if 5 == 10 or 5 == 5:
     print("At least one of the statements is true")
