@@ -1,0 +1,54 @@
+a = 50
+b = 10
+if a > b:
+    print("Hello World")
+#Hello World
+
+a = 50
+b = 10
+if a != b :
+    print("Hello World")
+#Hello World
+
+a = 50
+b = 10
+if a == b :
+    print("Yes")
+else:
+    print("No")
+#No
+    
+a = 50
+b = 10
+if a == b:
+    print("1")
+elif a > b:
+    print("2")
+else:
+    print("3")
+#2
+
+c = 1 #added because we didn't have it before
+d = 1 
+if a == b and c == d:
+    print("Hello")
+#and
+
+if a == b or c == d:
+    print("Hello")
+#or
+    
+if 5 > 2:
+    print("YES")
+
+a = 2
+b = 5
+print("YES") if a == b else print("NO")
+#NO
+
+a = 2
+b = 50
+c = 2
+if a == c or b == c:
+    print("YES")
+#YES
