@@ -44,7 +44,7 @@ def roundline(canvas, color, start, end, radius=1) :
 
 # functions
 def drawCircle( screen, x, y, color):
-    pygame.draw.circle( screen, color, ( x ,y), 40)
+    pygame.draw.circle( screen, color, (x , y), 40)
 
 def drawRect( screen, x, y, color):
     pygame.draw.rect(screen, color, (x, y, 50, 80))
@@ -53,10 +53,10 @@ def drawSquare( screen, x, y, color):
     pygame.draw.rect(screen, color, (x, y, 50, 50)) 
 
 def drawRightTriangle(screen, x, y, color):
-    pygame.draw.polygon(screen, color, ((x,y),(x+50,y),(x+50,y+50)))
+    pygame.draw.polygon(screen, color, ((x,y),(x+50,y),(x+50,y+50))) #x+25sec 
 
 def drawEquiTriangle(screen, x, y, color):
-    pygame.draw.polygon(screen, color, ((x,y), (x+50, y+40), (x+60, y-20)))
+    pygame.draw.polygon(screen, color, ((x,y), (x+50, y+40), (x+60, y-20))) #100 y
 
 def drawRhombus(screen, x, y, color):
     pygame.draw.polygon(screen, color, ((x,y),  (x+50, y-70), (x+100,y), (x+50, y+70)))

@@ -125,8 +125,8 @@ while not done:
                     ballRadius += 1
                 if event.key == pygame.K_a and ballRadius > 1:
                     ballRadius -= 1
-
-    if is_paused:
+    
+    if is_paused: # Display the pause screen with relevant messages and settings information
         screen.fill((100, 100, 100))
         pause_text = game_score_fonts.render('Game Paused. Press P to resume.', True, (255, 255, 255))
         settings_text_1 = game_score_fonts.render(
@@ -175,6 +175,8 @@ while not done:
         if ball.colliderect(unbreakable_block):
             dx, dy = detect_collision(dx, dy, ball, unbreakable_block)
 
+            print("Unbreakble")
+
     for block, bonus_type in bonus_brick_list:
         pygame.draw.rect(screen, bonus_brick_types[bonus_type]["color"], block)
 
@@ -184,6 +186,9 @@ while not done:
             # Apply perk of the bonus brick
             if bonus_brick_types[bonus_type]["perk"] == "speed":
                 ballSpeed += 2  # Example increase in speed
+
+                print(str(bonus_type))
+
 
             # Update last message
             last_message = bonus_brick_types[bonus_type]["message"]

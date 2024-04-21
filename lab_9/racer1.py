@@ -1,6 +1,9 @@
 import pygame, time
 import random
 from pygame.locals import *
+
+#from pygame import mixer
+
 # init
 pygame.init()
 
@@ -17,6 +20,10 @@ BLACK = (0,0,0)
 WHITE = (255,255,255)
 RED = (255,0,0)
 GREEN = (0, 255, 0)
+
+#music = pygame.mixer.music.load('C:/Users/User/Desktop/PP2 projects/PP2/lab_9/raceGo/Grey.mp3')
+
+#pygame.mixer.music.play(-1)
 
 # init fonts
 font = pygame.font.SysFont("Verdana", 60)
